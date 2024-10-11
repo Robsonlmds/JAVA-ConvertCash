@@ -1,7 +1,10 @@
+package Models;
+
 import java.util.Map;
 import java.util.NoSuchElementException;
 
 public class CashModel {
+
     private String result;
     private String base_code;
     private Map<String, Double> conversion_rates;
@@ -14,7 +17,7 @@ public class CashModel {
 
     public double findCoin(String moeda) {
         if (!conversion_rates.containsKey(moeda.toUpperCase())) {
-            throw new NoSuchElementException("Moeda não encontrada.");
+            throw new NoSuchElementException("Alguma moedas não foi encontrada.");
         }
         return conversion_rates.get(moeda.toUpperCase());
     }
@@ -23,4 +26,5 @@ public class CashModel {
     public String toString() {
         return "Base: " + base_code + ", Result: " + result + ", Taxas: " + conversion_rates.toString();
     }
+
 }
