@@ -10,7 +10,7 @@ public class Main {
         Scanner leitura = new Scanner(System.in);
         CheckConvert checkConvert = new CheckConvert();  // Instancia da classe que consulta a API
 
-        System.out.println("\nDiga a PRIMEIRA moeda vc quer COMPARAR (ex: USD, EUR, BRL): ");
+        System.out.println("\nDiga a PRIMEIRA moeda você quer COMPARAR (ex: USD, EUR, BRL): ");
         String moeda = leitura.nextLine();
 
         try {

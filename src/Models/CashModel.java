@@ -17,7 +17,7 @@ public class CashModel {
 
     public double findCoin(String moeda) {
         if (!conversion_rates.containsKey(moeda.toUpperCase())) {
-            throw new NoSuchElementException("Uma das Moedas não encontradas.");
+            throw new NoSuchElementException("Alguma moedas não foi encontrada.");
         }
         return conversion_rates.get(moeda.toUpperCase());
     }

@@ -14,7 +14,7 @@ public class CheckExchange {
     public CashModel searchFeesExchange() {
 
         Scanner read = new Scanner(System.in);
-        System.out.println("Diga a SEGUNDA moeda que vc quer converter: ");
+        System.out.println("Diga a SEGUNDA moeda que você quer converter: ");
         String coinBase = read.nextLine();
 
         URI apiUri = URI.create("https://v6.exchangerate-api.com/v6/d5f02a67d1cffe56f08a96b8/latest/" + coinBase);
