@@ -13,8 +13,6 @@ public class Main {
         System.out.println("\nDiga a PRIMEIRA moeda vc quer COMPARAR (ex: USD, EUR, BRL): ");
         String moeda = leitura.nextLine();
 
-        System.out.println();
-
         try {
             CashModel cashModel = checkConvert.consultationChange(); // Faz a consulta das taxas de câmbio na API
 
